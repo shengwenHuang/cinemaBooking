@@ -1,0 +1,145 @@
+2019-01-11 12:15:26,247 INFO Connects to the database bookingSystem.db.
+2019-01-11 12:15:46,836 INFO SELECT username FROM customers WHERE username = 'chiahsin';
+2019-01-11 12:15:46,837 INFO SELECT username, password FROM customers WHERE username = 'chiahsin';
+2019-01-11 12:15:46,838 INFO customers chiahsin: incorrect password!
+2019-01-11 12:15:56,291 INFO SELECT username, password FROM customers WHERE username = 'chiahsin';
+2019-01-11 12:15:56,292 INFO customers chiahsin logged in successfully!
+2019-01-11 12:16:43,691 INFO Manage booking
+2019-01-11 12:16:43,693 INFO SELECT film.film, booking.date, booking.time, booking.seat FROM film, booking WHERE username = 'chiahsin' AND film.filmID = booking.filmID;
+2019-01-11 12:16:55,029 INFO Manage booking
+2019-01-11 12:16:55,029 INFO SELECT film.film, booking.date, booking.time, booking.seat FROM film, booking WHERE username = 'chiahsin' AND film.filmID = booking.filmID;
+2019-01-11 12:17:14,116 INFO Update profile
+2019-01-11 12:17:14,117 INFO SELECT firstname, lastname, email FROM customers WHERE username = 'chiahsin';
+2019-01-11 12:17:26,157 INFO UPDATE {} SET {} = ('1111') WHERE {} = ('chiahsin');
+2019-01-11 12:17:26,166 INFO Profile updated
+2019-01-11 12:17:30,436 INFO Book
+2019-01-11 12:17:30,438 INFO SELECT DISTINCT date FROM filmTime;
+2019-01-11 12:17:31,716 INFO SELECT count(*) FROM film;
+2019-01-11 12:17:31,716 INFO SELECT time FROM filmTime WHERE date = '2019/01/08' AND filmID = 1;
+2019-01-11 12:17:31,717 INFO SELECT time FROM filmTime WHERE date = '2019/01/08' AND filmID = 2;
+2019-01-11 12:17:31,717 INFO SELECT time FROM filmTime WHERE date = '2019/01/08' AND filmID = 3;
+2019-01-11 12:17:31,718 INFO SELECT time FROM filmTime WHERE date = '2019/01/08' AND filmID = 4;
+2019-01-11 12:17:31,718 INFO SELECT time FROM filmTime WHERE date = '2019/01/08' AND filmID = 5;
+2019-01-11 12:17:31,719 INFO SELECT time FROM filmTime WHERE date = '2019/01/08' AND filmID = 6;
+2019-01-11 12:17:31,720 INFO SELECT time FROM filmTime WHERE date = '2019/01/08' AND filmID = 7;
+2019-01-11 12:17:31,720 INFO SELECT * FROM film;
+2019-01-11 12:17:31,726 INFO display films on 2019/01/08
+2019-01-11 12:17:31,730 INFO 
++----------------------------------------------------------------------------+
+|                            Films on 2019/01/08                             |
++---------+--------------------+-------+-------------------------------------+
+| Film ID |        Film        |  Time |             Description             |
++---------+--------------------+-------+-------------------------------------+
+|    1    | Fantastic Beasts:  | 11:00 |       In an effort to thwart        |
+|         |   The Crimes of    | 15:00 |   Grindelwald's plans of raising    |
+|         |    Grindelwald     | 19:00 |   pure-blood wizards to rule over   |
+|         |                    | 23:00 |    all non-magical beings, Albus    |
+|         |                    |       |    Dumbledore enlists his former    |
+|         |                    |       | student Newt Scamander, who agrees  |
+|         |                    |       |   to help, unaware of the dangers   |
+|         |                    |       | that lie ahead. Lines are drawn as  |
+|         |                    |       |  love and loyalty are tested, even  |
+|         |                    |       |    among the truest friends and     |
+|         |                    |       | family, in an increasingly divided  |
+|         |                    |       |          wizarding world.           |
+|    2    |  A Simple Favour   | 00:00 |  Stephanie is a mommy vlogger who   |
+|         |                    | 12:00 |  seeks to uncover the truth behind  |
+|         |                    | 16:00 |   her best friend Emily's sudden    |
+|         |                    | 20:00 |   disappearance from their small    |
+|         |                    |       |                town.                |
+|    3    | Crazy Rich Asians  | 13:00 |  Rachel Chu is happy to accompany   |
+|         |                    | 17:00 |  her longtime boyfriend, Nick, to   |
+|         |                    | 21:00 |    his best friend's wedding in     |
+|         |                    |       | Singapore. She's also surprised to  |
+|         |                    |       |     learn that Nick's family is     |
+|         |                    |       |     extremely wealthy and he's      |
+|         |                    |       |   considered one of the country's   |
+|         |                    |       |   most eligible bachelors. Thrust   |
+|         |                    |       |   into the spotlight, Rachel must   |
+|         |                    |       |      now contend with jealous       |
+|         |                    |       |  socialites, quirky relatives and   |
+|         |                    |       | something far, far worse -- Nick's  |
+|         |                    |       |        disapproving mother.         |
+|    4    |      Aquaman       | 14:00 |   Once home to the most advanced    |
+|         |                    | 18:00 | civilization on Earth, the city of  |
+|         |                    | 22:00 |    Atlantis is now an underwater    |
+|         |                    |       |  kingdom ruled by the power-hungry  |
+|         |                    |       |  King Orm. With a vast army at his  |
+|         |                    |       | disposal, Orm plans to conquer the  |
+|         |                    |       |   remaining oceanic people -- and   |
+|         |                    |       |  then the surface world. Standing   |
+|         |                    |       |    in his way is Aquaman, Orm's     |
+|         |                    |       | half-human, half-Atlantean brother  |
+|         |                    |       |  and true heir to the throne. With  |
+|         |                    |       |  help from royal counselor Vulko,   |
+|         |                    |       |      Aquaman must retrieve the      |
+|         |                    |       |   legendary Trident of Atlan and    |
+|         |                    |       |  embrace his destiny as protector   |
+|         |                    |       |            of the deep.             |
+|    5    |   Mary Poppins     |       |  Now an adult with three children,  |
+|         |      Returns       |       |  bank teller Michael Banks learns   |
+|         |                    |       | that his house will be repossessed  |
+|         |                    |       |   in five days unless he can pay    |
+|         |                    |       |  back a loan. His only hope is to   |
+|         |                    |       |   find a missing certificate that   |
+|         |                    |       |   shows proof of valuable shares    |
+|         |                    |       |   that his father left him years    |
+|         |                    |       |  earlier. Just as all seems lost,   |
+|         |                    |       | Michael and his sister receive the  |
+|         |                    |       |  surprise of a lifetime when Mary   |
+|         |                    |       |  Poppins -- the beloved nanny from  |
+|         |                    |       | their childhood -- arrives to save  |
+|         |                    |       |  the day and take the Banks family  |
+|         |                    |       |      on a magical, fun-filled       |
+|         |                    |       |             adventure.              |
+|    6    |      The Bee       |       |              iwjelrul               |
+|    7    |        ET          |       |             jhweilojrl              |
++---------+--------------------+-------+-------------------------------------+
+2019-01-11 12:18:03,881 INFO SELECT count(*) FROM film;
+2019-01-11 12:18:03,886 INFO SELECT time FROM filmTime WHERE date = '2019/01/08' AND filmID = 1;
+2019-01-11 12:18:07,489 INFO SELECT A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, C1, C2, C3, C4, C5, D1, D2, D3, D4, D5, E1, E2, E3, E4, E5 FROM seats WHERE filmID = 1 AND date = '2019/01/08' AND time = '11:00';
+2019-01-11 12:18:07,491 INFO 
++-----------------------+
+|         Screen        |
++---+---+---+---+---+---+
+|   | 1 | 2 | 3 | 4 | 5 |
++---+---+---+---+---+---+
+| A | O | O | O | O | O |
+| B | O | X | X | O | O |
+| C | O | X | X | O | O |
+| D | O | X | O | O | O |
+| E | O | O | O | O | O |
++---+---+---+---+---+---+
+2019-01-11 12:18:07,491 INFO O: seats available; X: seats taken
+2019-01-11 12:18:11,797 INFO SELECT A1 FROM seats WHERE filmID = 1 AND date = '2019/01/08' AND time = '11:00';
+2019-01-11 12:18:11,802 INFO UPDATE {} SET {} = ('X') WHERE {} = ('1');
+2019-01-11 12:18:11,828 INFO INSERT INTO booking (timeMark, username, filmID, date, time, seat) VALUES (?, ?, ?, ?, ?, ?);
+2019-01-11 12:18:11,843 INFO 1 (filmID) on 2019/01/08 at 11:00 A1 is/are booked
+2019-01-11 12:18:25,944 INFO chiahsin logged out.
+2019-01-11 12:18:44,358 INFO SELECT username FROM admin WHERE username = 'slotopt';
+2019-01-11 12:18:44,359 INFO SELECT username, password FROM admin WHERE username = 'slotopt';
+2019-01-11 12:18:44,359 INFO admin slotopt logged in successfully!
+2019-01-11 12:18:48,695 INFO Check booking
+2019-01-11 12:18:48,696 INFO SELECT * FROM film;
+2019-01-11 12:18:51,986 INFO SELECT count(*) FROM film;
+2019-01-11 12:18:51,987 INFO SELECT DISTINCT date FROM filmTime;
+2019-01-11 12:18:53,189 INFO SELECT time FROM filmTime WHERE date = '2019/01/08' AND filmID = 2;
+2019-01-11 12:18:54,445 INFO SELECT film FROM film WHERE filmID = 2;
+2019-01-11 12:18:54,446 INFO SELECT A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, C1, C2, C3, C4, C5, D1, D2, D3, D4, D5, E1, E2, E3, E4, E5 FROM seats WHERE date = '2019/01/08' AND time = '00:00';
+2019-01-11 12:18:54,447 INFO 
++-----------------------+
+|         Screen        |
++---+---+---+---+---+---+
+|   | 1 | 2 | 3 | 4 | 5 |
++---+---+---+---+---+---+
+| A | X | X | O | O | O |
+| B | O | X | X | O | O |
+| C | O | O | O | O | O |
+| D | O | X | X | O | O |
+| E | O | O | O | O | O |
++---+---+---+---+---+---+
+2019-01-11 12:18:54,448 INFO O: seats available; X: seats taken
+2019-01-11 12:18:54,448 INFO Seats of 'A Simple Favour' screening at 00:00 on 2019/01/08
+2019-01-11 12:18:54,449 INFO Total: 25; Booked: 6; Available: 19
+
+2019-01-11 12:19:12,314 INFO slotopt logged out.
